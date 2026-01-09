@@ -1,0 +1,6 @@
+rgb(248, 249, 253) for the background color of the box-1
+rgb(244, 244, 254) for the top box-1.1
+rgb(250, 250, 250)for the background inside the box-1
+rgb(0, 38, 227)button color for next button
+rgb(249, 249, 249)cancel button color
+rgb(242, 239, 246)for the body color

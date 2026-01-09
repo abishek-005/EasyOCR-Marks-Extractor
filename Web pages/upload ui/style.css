@@ -1,0 +1,125 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* Background panels */
+.main {
+    position: relative;
+    display: flex;
+    height: 100vh;
+}
+
+.a1 {
+    width: 100vh;
+    background-color: rgb(28, 33, 28);
+}
+
+.a2 {
+    width: 150vh;
+    background-color:#dd902c;
+}
+
+.card {
+    position: absolute;
+
+    /*  CENTER LOGIC */
+    top: 50%;
+    left: 50%;
+    transform: translate(-59.6%, -50%);
+
+    display: flex;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.30);
+}
+
+/* Card inner sections */
+.c1 {
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(28, 29, 33);
+    height: 500px;
+    width: 300px;
+    border-radius: 12px 0 0 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#f{
+    padding-left: 20px;
+    color:#ffe713 ;
+    font-size: 300%;
+}
+#f2{
+    font-size: large;
+    padding-left: 20px;
+    
+}#f3{
+    font-size: large;
+    padding-left: 20px;
+    
+}#f4{
+    padding-left: 20px;
+    
+}
+
+#button{
+    margin-left: 50px;
+    margin-top: 20px;
+   width: 200px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(252, 252, 252);
+    background-color: #dd902c;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+#button:hover{
+     background: #FFA726;
+}
+.c2 {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    background-color: #dd902c;
+    height: 600px;
+    width: 500px;
+    border-radius: 0 12px 12px 0;
+}
+
+.imgg{
+    width: 400px;
+    height: 350px;
+}
+
+.c2 h1{
+position: relative;
+-webkit-text-stroke: white;
+}
+
+.c2 h1::before{
+    content: attr(data-text);
+    position: absolute;
+    color: #dd902c;
+    -webkit-text-stroke: white;
+    border-right: 2px solid white;
+    overflow: hidden;
+    animation: animate 4s linear infinite;
+
+}
+@keyframes animate{
+    0%,100%{
+        width: 0;
+    }
+    50%{
+        width: 100%;
+    }
+}

@@ -1,0 +1,138 @@
+/* body ku*/
+body{
+    margin: 0%;
+    display: flex;
+    position: relative;
+}
+/* bock-ground 1 ku*/
+.back1{
+    width: 45%;
+    height: 100vh;
+    background-color: rgb(28, 33, 28);
+}
+/* bock-ground 2 ku*/
+.back2{
+    width: 55%;
+    height: 100vh;
+    background-color: #dd902c;
+}
+/* bock-ground mela irukura antha card ku*/
+.card{
+    width: 900px;
+    height: 500px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.30);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.card{
+    display: flex;
+    position: absolute;
+}
+/* iamge ku*/
+img{
+    margin-left: 20%;
+    width: 350px;
+    height: 350px;
+}
+/* left side card ku*/
+.c1{
+    padding-left: 2%;
+}
+.c1 h1{
+    color: #e5f4f2;
+    font-size: 42px;
+    font-weight: 700;
+}
+.c1 h1 span{
+    color: #5eead4;
+}
+.c1 p{
+    color: #aabfbb;
+    font-size: 17px;
+    line-height: 1.6;
+}
+/* button ku*/
+button{
+    background-color: #5eead4;
+    color: #063f3a;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 6px;
+    font-weight: 600;
+    margin-top: 10%;
+    margin-left: 25%;
+}
+button:hover{
+    background-color: #42c7b8;
+    cursor: pointer;
+}
+/* right side card ku*/
+.c2{
+    padding-right: 5%;
+    font-size: 130%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #fef3c7;
+}
+.cgpa{
+    margin-right: 3px;
+}
+
+/* for aniamation ku*/
+.p4::after{
+    content: '';
+    display: inline-block;
+    width: 2px;
+    height: 2em;
+    background-color: #aabfbb;
+    margin-left: 5px;
+    animation: blink 0.99s infinite;
+    animation-delay: 1.6s;
+}
+.type{
+    color: #aabfbb;
+    font-size: 17px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+}
+/* delays for each line */
+.p1{ animation: typing 3s steps(40) forwards;
+    animation-delay: 0s; }
+
+.p2{ animation: typing2 1s steps(40) forwards;
+    animation-delay: 3.2s; }
+
+.p3{ animation: typing3 1.5s steps(40) forwards;
+    animation-delay: 4.4s; }
+
+.p4{  
+    animation: typing4 1.5s steps(40) forwards;
+    animation-delay: 5.8s; }
+
+/* animations */
+@keyframes typing{
+    from{ width: 0; }
+    to{ width: 72%; }
+}
+@keyframes typing2{
+    from{ width: 0; }
+    to{ width: 15%; }
+}
+@keyframes typing3{
+    from{ width: 0; }
+    to{ width: 62%; }
+}
+@keyframes typing4{
+    from{ width: 0; }
+    to{ width: 63%; }
+}
+
+@keyframes blink{
+    50% {opacity: 0;} }
+
